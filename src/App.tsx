@@ -37,7 +37,7 @@ interface Fraction {
 }
 
 function App() {
-  const [items, setItems] = useState<Item[]>([
+  /* const [items, setItems] = useState<Item[]>([
     { id: 1, name: "Tomato Paste", price: 140.0, quantity: 1, weight: 0 },
     { id: 2, name: "Baked plantain", price: 29.0, quantity: 3, weight: 0 },
     { id: 3, name: "Chicken breast", price: 185.0, quantity: 0, weight: 2.5 },
@@ -56,8 +56,8 @@ function App() {
     { id: 16, name: "Avocado", price: 55.0, quantity: 2, weight: 0.6 },
     { id: 17, name: "Yogurt", price: 70.0, quantity: 3, weight: 0.45 },
     { id: 18, name: "Sausages", price: 130.0, quantity: 1, weight: 0.5 },
-  ]);
-  /* const [items, setItems] = useState<Item[]>([]); */
+  ]); */
+  const [items, setItems] = useState<Item[]>([]);
   const [newItem, setNewItem] = useState<NewItemState>({
     name: "",
     price: "",
