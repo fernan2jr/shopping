@@ -164,6 +164,8 @@ function App() {
               </Label>
               <Input
                 type="number"
+                inputMode="decimal"
+                autoComplete="off"
                 step="0.01"
                 min="0"
                 placeholder="0.00"
@@ -182,6 +184,8 @@ function App() {
               </Label>
               <Input
                 type="number"
+                inputMode="decimal"
+                autoComplete="off"
                 step="0.01"
                 min="0"
                 placeholder="0.00"
