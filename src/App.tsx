@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import {
-  ShoppingCart,
   Plus,
   PlusIcon,
   MinusIcon,
@@ -175,10 +174,15 @@ function App() {
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Header */}
         <div className="relative text-center mb-8">
-          <h1 className="text-2xl font-bold mb-2 flex items-center justify-center gap-2">
-            <ShoppingCart className="size-8 text-emerald-400" />
-            Shopping List
-          </h1>
+          <div className="flex items-end gap-1.5">
+            <h1 className="text-2xl font-bold mb-2 flex items-center justify-center gap-2">
+              <img src="/favicon.svg" alt="Shopping List" className="size-8" />
+              ShopAid
+            </h1>
+            <p className="text-xs font-semibold text-white/50 mb-3 md:mb-2.5">
+              List Tracker
+            </p>
+          </div>
           <div className="absolute top-0 right-0">
             <Button
               variant="outline"
